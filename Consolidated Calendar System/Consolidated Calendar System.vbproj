@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DE73687-DFEA-403B-AE0F-99D6DF83A2CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Consolidated_Calendar_System.My.MyApplication</StartupObject>
+    <RootNamespace>Consolidated_Calendar_System</RootNamespace>
+    <AssemblyName>Consolidated Calendar System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Consolidated Calendar System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Consolidated Calendar System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ceulogo %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.vb">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccounts.Designer.vb">
+      <DependentUpon>FrmAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvent.Designer.vb">
+      <DependentUpon>FrmEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest.Designer.vb">
+      <DependentUpon>FrmGuest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHome.Designer.vb">
+      <DependentUpon>FrmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportViewer.Designer.vb">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplashScreen.Designer.vb">
+      <DependentUpon>FrmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYear.Designer.vb">
+      <DependentUpon>FrmYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariable.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmNotes.Designer.vb">
+      <DependentUpon>FrmNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccounts.resx">
+      <DependentUpon>FrmAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvent.resx">
+      <DependentUpon>FrmEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest.resx">
+      <DependentUpon>FrmGuest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHome.resx">
+      <DependentUpon>FrmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotes.resx">
+      <DependentUpon>FrmNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportViewer.resx">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplashScreen.resx">
+      <DependentUpon>FrmSplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYear.resx">
+      <DependentUpon>FrmYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ceulogo %281%29.ico" />
+    <None Include="Resources\Search 2.png" />
+    <None Include="Resources\Search 1.png" />
+    <None Include="Resources\play 1.png" />
+    <None Include="Resources\oie_1411852htlPKYzi.png" />
+    <None Include="Resources\minimize 2.png" />
+    <None Include="Resources\minimize 1.png" />
+    <None Include="Resources\fff%28CROP+RES%29.png" />
+    <None Include="Resources\document 2.png" />
+    <None Include="Resources\document 1.png" />
+    <None Include="Resources\delete 2.png" />
+    <None Include="Resources\delete 1.png" />
+    <None Include="Resources\compact disc 2.png" />
+    <None Include="Resources\compact disc 1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\science-tech.gif" />
+    <None Include="Resources\refresh 2.png" />
+    <None Include="Resources\refresh 1.png" />
+    <None Include="Resources\print 2.png" />
+    <None Include="Resources\print 1.png" />
+    <None Include="Resources\power 2.png" />
+    <None Include="Resources\power 1.png" />
+    <None Include="Resources\play 2.png" />
+    <None Include="Resources\science-tech1.gif" />
+    <None Include="Resources\refresh 21.png" />
+    <None Include="Resources\refresh 11.png" />
+    <None Include="Resources\print 21.png" />
+    <None Include="Resources\print 11.png" />
+    <None Include="Resources\power 21.png" />
+    <None Include="Resources\power 11.png" />
+    <None Include="Resources\play 21.png" />
+    <None Include="Resources\play 11.png" />
+    <None Include="Resources\oie_1411852htlPKYzi1.png" />
+    <None Include="Resources\minimize 21.png" />
+    <None Include="Resources\minimize 11.png" />
+    <None Include="Resources\fff%28CROP+RES%291.png" />
+    <None Include="Resources\document 21.png" />
+    <None Include="Resources\document 11.png" />
+    <None Include="Resources\delete 21.png" />
+    <None Include="Resources\delete 11.png" />
+    <None Include="Resources\compact disc 21.png" />
+    <None Include="Resources\compact disc 11.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
